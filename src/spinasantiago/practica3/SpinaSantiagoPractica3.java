@@ -76,7 +76,9 @@ public class SpinaSantiagoPractica3 {
                     int numCambiar = sc.nextInt();
                     
                     System.out.println(plantilla[numCambiar].getNombre() + " cambiado por " + jugadores[numFichar].getNombre());
-                    plantilla[numCambiar] = jugadores[numFichar]; 
+                    Jugador jAux = plantilla[numCambiar];
+                    plantilla[numCambiar] = jugadores[numFichar];
+                    jugadores[numFichar] = jAux;
                     
                     break;
                 case 3: // Suma total de todos los jugadores de la plantilla
